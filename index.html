@@ -87,6 +87,7 @@
 		clean();
 		num = Math.ceil(Math.random()*6);
 		console.log(num);
+		history.replaceState(null, null, location.href.split('#')[0] + '#'+num);
 
 		switch(num) {
 			case 1: {
