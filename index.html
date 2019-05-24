@@ -148,10 +148,13 @@
 		tbl.rows[2].cells[2].innerHTML = "<div class='circle hide'>";
 		setTimeout(function() { tbl.classList.toggle("twist");},200);
 	}
+		
+	function push(){
+	window.history.pushState( {} , '', '3' );}
 
 	</script>
 </head>
-<body onload="go()" onkeypress="go()" onclick="go()">
+<body onload="go(); push()" onkeypress="go()" onclick="go()">
 	<div class="center">
 			<table id="tbl">
 				<tr> <td></div></td><td></td><td></td> </tr>
