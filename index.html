@@ -44,8 +44,8 @@
 		.twist {
 			position: relative;
 			top: -2vh;
-			transform: rotate(180deg);
-			transition: transform 0.3s ease,
+			transform: rotate(720deg);
+			transition: transform 1s ease,
 						top 0.15s ease;
 		}
 
@@ -147,7 +147,7 @@
 		tbl.rows[2].cells[0].innerHTML = "<div class='circle hide'>";
 		tbl.rows[2].cells[1].innerHTML = "<div class='circle hide'>";
 		tbl.rows[2].cells[2].innerHTML = "<div class='circle hide'>";
-		setTimeout(function() { tbl.classList.toggle("twist");},200);
+		setTimeout(function() { tbl.classList.toggle("twist");},1200);
 	}
 		
 
